@@ -1,0 +1,49 @@
+HashMap use gare ni huncha
+Map<String, List<DisplayAccountInterface> >  productGroup =  new HashMap<>();
+
+List<DisplayAccountInterface> deposit = displayFactory.getDepositDisplayInterface();
+List<DisplayAccountInterface> loan = displayFactory.getLoanDisplayInterface();
+List<DisplayAccountInterface> mortage = displayFactory.getMortageDisplayInterface();
+
+hashMap.put(“loan”, new A);
+
+
+productGroup(){
+list<DisplaAccountInterface> deposit;
+getterdeposit(){
+	return deposit;
+}
+
+List<AccountDisplayInterface> rates = new ArrayList<AccountDisplayInterface>();
+//Rates.addAll(deposit);
+//Rates.addAll(loan);
+Call gara ta
+
+List<AccountRates
+
+
+productGroup.put(“loan”, loan);
+productGroup.put(“mortage”, mortage);
+return productGroup;
+
+
+[
+{
+"deposit":[{"displayName":"Saving"},
+{"displayName":"Checking"},
+{"displayName":"MoneyMarket"}
+]
+},
+{
+"loan":[{"displayName":"Saving"},
+{"displayName":"Checking"},
+{"displayName":"MoneyMarket"}
+]
+},
+{
+"mortage":[{"displayName":"Saving"},
+{"displayName":"Checking"},
+{"displayName":"MoneyMarket"}
+]
+}
+]
