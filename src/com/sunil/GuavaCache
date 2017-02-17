@@ -1,0 +1,32 @@
+//calling class
+@Autowire
+DepositFactory depositFactory;
+
+depositFactory.depositPopulate(String deposit);
+
+
+//cache calling calling class
+
+class DepositFactory(){
+
+	@Autowire
+	DepositService depositService;
+	
+	private LoadingCache<String, List<DepositFactory>> depositCache;
+	
+	private DepositFactory(){
+		cache = CacheBuilder.newBuilder()
+		.refreshAfterWrite(2, TimeUnit.SECOND)
+		.build(new CacheLoader<String, List<DepositAccount>(){
+			
+			@Overide
+			public List<DepositAccount> load(String argo) trhow Exception{
+				return depositService.populateDepositCache();
+			}
+		});
+	}
+
+	public List<AccountDisplayInterface> depositPopulate(String deposit){
+		List<AccountDisplayInterface> accountDisplayInterface = cache.get(argo);
+	}
+}
